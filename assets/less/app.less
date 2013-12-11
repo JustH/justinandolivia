@@ -1,0 +1,206 @@
+/*!
+ * Roots 6.5.0
+ */
+
+@import "bootstrap/bootstrap.less";
+@import url(http://fonts.googleapis.com/css?family=Voltaire);
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+html, 
+body {height:100%; }
+
+
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+.banner {
+min-height:150px;
+height:auto;
+font-family: 'Voltaire', sans-serif;
+margin-bottom:0;}
+
+.navbar-brand {width: 144px; 
+  height: 150px;
+  background: url("/assets/img/jologo.png");
+  text-indent: -9999px; 
+  
+  }
+  
+ .navbar-collapse { background-color: @brand-secondary;}
+ 
+ #logo {margin-left:auto;
+margin-right:auto; width: 144px;}
+
+#typography {display:block; margin-left: auto; margin-right: auto; }
+
+#home-img { width: 100%; background: url("/assets/img/home-top.jpg") no-repeat 100% 30%; background-size: auto 100%;  margin-bottom: 20px;}
+
+
+
+ 
+ 
+
+/* ==========================================================================
+   Content
+   ========================================================================== */
+
+.content {
+	}
+	
+#push {
+		min-height: 100%;
+		height:auto !important;
+ 		padding-bottom:330px;
+}
+
+
+/* ==========================================================================
+   Primary Content
+   ========================================================================== */
+
+.main { }
+
+/* Gallery Shortcode */
+.gallery-row { padding: 15px 0; }
+
+
+
+/* ==========================================================================
+   Sidebar
+   ========================================================================== */
+
+.sidebar { }
+
+
+
+/* ==========================================================================
+   Posts
+   ========================================================================== */
+
+.hentry header { }
+.hentry time { }
+.hentry .byline { }
+.hentry .entry-content { }
+.hentry footer { }
+
+
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+.content-info {
+background-color: @brand-secondary;
+height: auto;
+margin-top:-330px;
+}
+
+
+/* ==========================================================================
+   WordPress Generated Classes
+   See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
+   ========================================================================== */
+
+.aligncenter { display: block; margin: 0 auto; }
+.alignleft { float: left; }
+.alignright { float: right; }
+figure.alignnone { margin-left: 0; margin-right: 0; }
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media (min-width: @screen-sm) { .navbar-nav {position: absolute; top:0; bottom: 0; left: 30%; right: 0; margin: auto; height:30%; width:70%; font-size: 150%;} #home-img{height: 600px; background-size: 100%; padding-top: 68px;} }
+
+@media (min-width: @screen-md) { .content-info{height: 330px;} .banner {height:150px;} .navbar-nav {position: absolute; top:0; bottom: 0; left: 30%; right: 0; margin: auto; height:30%; width:70%; font-size: 200%;}
+.navbar-brand{ margin: 0;}
+
+}
+
+@media (min-width: @screen-lg) { .navbar-nav {left:30%; width:70%;}}
+
+/* Typography */
+
+h1, h2, h3, h4, h5 {font-family: 'Voltaire', sans-serif;}
+
+hr {
+	width: 100%;
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+}
+
+/* pages */
+
+.page-header { border-bottom: none; text-align: center; }
+
+.page-header h1 {background: url("/assets/img/banner.png"); 
+height: 50px; 
+width: 250px; 
+color: white;
+line-height: 50px;
+margin-left:auto;
+margin-right:auto;}
+
+.page-header hr:after {
+    content: "§";
+    display: inline-block;
+    position: relative; 
+    top: -0.7em;  
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: white;
+}
+
+/* widgets */
+
+
+.widget-inner h3 {background: url("/assets/img/banner.png") no-repeat; 
+background-size: 100% 100%;
+height: 50px; 
+max-width: 100%;
+width:250px; 
+color: white;
+line-height: 50px;
+margin-left: auto;
+margin-right:auto;
+text-align: center;
+font-size: 120%}
+
+
+/* social icons */
+.icon { width: 30px; height: 30px; display: inline-block;}
+a.fb {background: url("/assets/img/social-purple.png") 0 0;}
+a.twitter {background: url("/assets/img/social-purple.png") 90px 0; }
+a.rss {background: url("/assets/img/social-purple.png") 120px 0; }
+a.yt {background: url("/assets/img/social-purple.png") 60px 0; }
+a.mail {background: url("/assets/img/social-purple.png") 30px 0; }
+
+/* responsive video */
+
+.video-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+}
+
+.video-container iframe,  
+.video-container object,  
+.video-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
