@@ -9,7 +9,7 @@
    Base
    ========================================================================== */
 
-html, 
+html,
 body {height:100%; }
 
 
@@ -24,15 +24,14 @@ height:auto;
 font-family: 'Voltaire', sans-serif;
 margin-bottom:0;}
 
-.navbar-brand {width: 144px; 
+.navbar-brand {width: 144px;
   height: 150px;
   background: url("/assets/img/jologo.png");
-  text-indent: -9999px; 
-  
+  text-indent: -9999px;
   }
-  
+
  .navbar-collapse { background-color: @brand-secondary;}
- 
+
  #logo {margin-left:auto;
 margin-right:auto; width: 144px;}
 
@@ -41,17 +40,13 @@ margin-right:auto; width: 144px;}
 #home-img { width: 100%; background: url("/assets/img/home-top.jpg") no-repeat 100% 30%; background-size: auto 100%;  margin-bottom: 20px;}
 
 
-
- 
- 
-
 /* ==========================================================================
    Content
    ========================================================================== */
 
-.content {
-	}
-	
+.content { }
+
+/* div to push footer to bottom of page if content is too short */
 #push {
 		min-height: 100%;
 		height:auto !important;
@@ -117,14 +112,51 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
    Media Queries
    ========================================================================== */
 
-@media (min-width: @screen-sm) { .navbar-nav {position: absolute; top:0; bottom: 0; left: 30%; right: 0; margin: auto; height:30%; width:70%; font-size: 150%;} #home-img{height: 600px; background-size: 100%; padding-top: 68px;} }
+@media (min-width: @screen-sm) {
+  .navbar-nav {
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 30%;
+    right: 0;
+    margin: auto;
+    height:30%; width:70%;
+    font-size: 150%;
+  }
 
-@media (min-width: @screen-md) { .content-info{height: 330px;} .banner {height:150px;} .navbar-nav {position: absolute; top:0; bottom: 0; left: 30%; right: 0; margin: auto; height:30%; width:70%; font-size: 200%;}
-.navbar-brand{ margin: 0;}
+  #home-img {
+    height: 600px;
+    background-size: 100%;
+    padding-top: 68px;
+  }
+}
+
+@media (min-width: @screen-md) {
+  .banner {
+    height:150px;
+  }
+  .navbar-nav {
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 30%;
+    right: 0;
+    margin: auto;
+    height:30%;
+    width:70%;
+    font-size: 200%;
+  }
+  .navbar-brand{ margin: 0;
+  }
 
 }
 
-@media (min-width: @screen-lg) { .navbar-nav {left:30%; width:70%;}}
+@media (min-width: @screen-lg) {
+  .navbar-nav {
+    left:30%;
+    width:70%;
+  }
+}
 
 /* Typography */
 
@@ -143,9 +175,9 @@ hr {
 
 .page-header { border-bottom: none; text-align: center; }
 
-.page-header h1 {background: url("/assets/img/banner.png"); 
-height: 50px; 
-width: 250px; 
+.page-header h1 {background: url("/assets/img/banner.png");
+height: 50px;
+width: 250px;
 color: white;
 line-height: 50px;
 margin-left:auto;
@@ -154,8 +186,8 @@ margin-right:auto;}
 .page-header hr:after {
     content: "§";
     display: inline-block;
-    position: relative; 
-    top: -0.7em;  
+    position: relative;
+    top: -0.7em;
     font-size: 1.5em;
     padding: 0 0.25em;
     background: white;
@@ -163,12 +195,11 @@ margin-right:auto;}
 
 /* widgets */
 
-
-.widget-inner h3 {background: url("/assets/img/banner.png") no-repeat; 
+.widget-inner h3 {background: url("/assets/img/banner.png") no-repeat;
 background-size: 100% 100%;
-height: 50px; 
+height: 50px;
 max-width: 100%;
-width:250px; 
+width:250px;
 color: white;
 line-height: 50px;
 margin-left: auto;
@@ -195,8 +226,8 @@ a.mail {background: url("/assets/img/social-purple.png") 30px 0; }
 	overflow: hidden;
 }
 
-.video-container iframe,  
-.video-container object,  
+.video-container iframe,
+.video-container object,
 .video-container embed {
 	position: absolute;
 	top: 0;
